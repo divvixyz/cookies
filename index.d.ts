@@ -1,4 +1,4 @@
-declare module '@react-native-cookies/cookies' {
+declare module '@divvi/cookies' {
   export interface Cookie {
     name: string;
     value: string;
@@ -22,7 +22,7 @@ declare module '@react-native-cookies/cookies' {
     getFromResponse(url: string): Promise<Cookies>;
 
     clearAll(useWebKit?: boolean): Promise<boolean>;
-    
+
     // Android only
     flush(): Promise<void>;
     removeSessionCookies(): Promise<boolean>;
